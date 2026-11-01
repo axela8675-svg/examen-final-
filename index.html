@@ -1,0 +1,298 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Panadería El Trigo de Oro. Pan fresco y artesanal, horneado con tradición y amor todos los días.">
+    <title>Panadería El Trigo de Oro</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: #fdfbf7;
+            color: #333;
+        }
+
+        header {
+            background-color: #8b5a2b;
+            color: white;
+            padding: 25px 15px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.3rem;
+            margin-bottom: 8px;
+        }
+
+        nav {
+            background-color: #6f421f;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 15px;
+            gap: 25px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffd700;
+        }
+
+        .hero {
+            background:
+                linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+                url('https://images.unsplash.com/photo-1509440159596-0249088772ff?w=1600');
+            background-size: cover;
+            background-position: center;
+            min-height: 350px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+            padding: 30px 15px;
+        }
+
+        .hero h2 {
+            font-size: 3rem;
+            text-shadow: 2px 2px 5px black;
+        }
+
+        .hero p {
+            margin-top: 15px;
+            font-size: 1.2rem;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 50px auto;
+            padding: 0 20px;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 35px;
+            color: #8b5a2b;
+        }
+
+        .productos-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+            text-align: center;
+            padding-bottom: 20px;
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+        }
+
+        .card h3 {
+            margin: 18px 10px 10px;
+            color: #5c3818;
+        }
+
+        .card p {
+            color: #666;
+            padding: 0 15px;
+            font-size: 0.95rem;
+            margin-bottom: 15px;
+        }
+
+        .precio {
+            font-size: 1.3rem;
+            font-weight: bold;
+            color: #b0581c;
+            margin-bottom: 15px;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #8b5a2b;
+            color: white;
+            border: none;
+            padding: 12px 22px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            text-decoration: none;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #6f421f;
+        }
+
+        .nosotros {
+            background-color: #f2e5d5;
+            padding: 40px 20px;
+            text-align: center;
+            line-height: 1.8;
+        }
+
+        .nosotros h2 {
+            color: #8b5a2b;
+            margin-bottom: 15px;
+        }
+
+        footer {
+            background-color: #3e2723;
+            color: white;
+            text-align: center;
+            padding: 25px 15px;
+            margin-top: 40px;
+            line-height: 1.8;
+        }
+
+        footer a {
+            color: #ffd700;
+            text-decoration: none;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 1.7rem;
+            }
+
+            nav {
+                gap: 15px;
+            }
+
+            .hero h2 {
+                font-size: 2rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+
+            .container {
+                margin: 35px auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Panadería El Trigo de Oro</h1>
+        <p>Horneando tradición y amor todos los días</p>
+    </header>
+
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#productos">Productos</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+
+    <section class="hero" id="inicio">
+        <div>
+            <h2>Pan Fresco y Artesanal</h2>
+            <p>El sabor de la tradición en cada bocado.</p>
+        </div>
+    </section>
+
+    <section class="container" id="productos">
+
+        <h2 class="section-title">Nuestras Especialidades</h2>
+
+        <div class="productos-grid">
+
+            <div class="card">
+                <img
+                    src="https://images.unsplash.com/photo-1549931319-a545dcf3bc73?w=700"
+                    alt="Baguette francesa"
+                >
+                <h3>Baguette Francesa</h3>
+                <p>Crocante por fuera, suave y esponjosa por dentro.</p>
+                <div class="precio">$2.50</div>
+                <a class="btn" href="https://wa.me/50255555555?text=Hola,%20quiero%20pedir%20una%20Baguette%20Francesa">
+                    Pedir ahora
+                </a>
+            </div>
+
+            <div class="card">
+                <img
+                    src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=700"
+                    alt="Croissant de mantequilla"
+                >
+                <h3>Croissant de Mantequilla</h3>
+                <p>Hojaldre clásico hecho con mantequilla pura.</p>
+                <div class="precio">$1.80</div>
+                <a class="btn" href="https://wa.me/50255555555?text=Hola,%20quiero%20pedir%20un%20Croissant">
+                    Pedir ahora
+                </a>
+            </div>
+
+            <div class="card">
+                <img
+                    src="https://images.unsplash.com/photo-1585478259715-876acc5be8eb?w=700"
+                    alt="Pan de masa madre"
+                >
+                <h3>Pan de Masa Madre</h3>
+                <p>Fermentación lenta de 24 horas con sabor único.</p>
+                <div class="precio">$4.00</div>
+                <a class="btn" href="https://wa.me/50255555555?text=Hola,%20quiero%20pedir%20un%20Pan%20de%20Masa%20Madre">
+                    Pedir ahora
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="nosotros" id="nosotros">
+        <h2>Sobre Nosotros</h2>
+        <p>
+            En Panadería El Trigo de Oro elaboramos nuestros productos
+            con ingredientes de calidad, dedicación y mucho amor.
+            Nuestro compromiso es ofrecer pan fresco y delicioso
+            para compartir en familia todos los días.
+        </p>
+    </section>
+
+    <footer id="contacto">
+        <p>&copy; 2026 Panadería El Trigo de Oro. Todos los derechos reservados.</p>
+        <p>Visítanos en Calle Principal #123</p>
+        <p>Teléfono: (502) 5555-5555</p>
+        <p>¡Gracias por preferirnos!</p>
+    </footer>
+
+</body>
+</html>
+
+
